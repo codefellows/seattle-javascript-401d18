@@ -16,7 +16,7 @@
 ## Testing Resources
 * Read [a gentle intro to tdd in js]
 * Read [expect docs](https://github.com/mjackson/expect)
-* Read [mocha getting started]
+* Read [jest getting started]
 
 ## Learning Objectives
 * Students will be able to set up a node project
@@ -27,7 +27,7 @@
 ## Overview
 * 1hr what is node
 * 1hr commonjs demo
-* 1hr mocha demo
+* 1hr jest demo
 
 #### Setting up a DEV workspace and using your computer like a DEV
 * Before people are developers they often development many habits of computer usage they will need to unlearn
@@ -98,8 +98,8 @@
  * GREEN - the test pass because the feature is implemented
  * REFACTOR - the code runs better, and the test still pass
 
-#### Mocha and Expect
-* Mocha is a testing framework
+#### Jest and Expect
+* Jest is a testing framework
  * Its job is to facilitate writing and running test
 * Expect is an assertion library
  * Its job facilitate writing expectations and then throw errors when the expectations are not met
@@ -111,5 +111,5 @@
 [about v8]: https://developers.google.com/v8/
 [what is npm]: https://docs.npmjs.com/getting-started/what-is-npm
 [a gentle intro to tdd in js]: http://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/
-[mocha getting started]: http://mochajs.org/#getting-started
+[jest getting started]: https://facebook.github.io/jest/docs/en/getting-started.html#content
 [just another guide to ES6]: https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f#.wb7rj1gin

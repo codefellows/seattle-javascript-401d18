@@ -127,9 +127,9 @@ Javascript is a single threaded language. Which means that it can only do a sing
   * `stat` - get information about a file/dir/link
   * `watch` - watch a file for changes
 
-#### Asynchronous Testing with MochaJS
+#### Asynchronous Testing
  * **Calling `done`**
-   * MochaJS gives us 2 sec to call `done` before a timeout error occurs
+   * Jest gives us a short timeframe to call `done` before a timeout error occurs
      * be sure to call `done` in the appropriate location (usually, this in your internal logic)
      * calling `done` in the wrong block will likely cause a false positive test result
 
