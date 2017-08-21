@@ -10,7 +10,12 @@
 * Workspace discussion... how organized are you?
 * Node.js / NPM Intro/Review
 * Test Driven Development
+  - Writing basic assertions
+  - Jest as a test runner
 * Node.js Modules
+  - Running scripts
+  - Creating modules
+  - Working with exports
 
 * Lab Process Overview
 * Lab Assignment Preview
