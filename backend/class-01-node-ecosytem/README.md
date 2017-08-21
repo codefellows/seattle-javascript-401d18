@@ -1,6 +1,22 @@
 401 JS -- class 01 node ecosystem
 ===
 
+## Daily Plan
+* Intros
+* Class overview 
+  - What are we going to do over the next ten weeks?
+  - What are we covering this week? Today?
+
+* Workspace discussion... how organized are you?
+* Node.js / NPM Intro/Review
+* Test Driven Development
+* Node.js Modules
+
+* Lab Process Overview
+* Lab Assignment Preview
+
+-----
+
 ## Node.js Resources
 * Read [about node]
 * Skim [libuv docs]
@@ -24,10 +40,6 @@
 * Students will be able to construct and run unit tests
 * Students will be able explain the TDD philosophy of red, green, refactor
 
-## Overview
-* 1hr what is node
-* 1hr commonjs demo
-* 1hr jest demo
 
 #### Setting up a DEV workspace and using your computer like a DEV
 * Before people are developers they often development many habits of computer usage they will need to unlearn
