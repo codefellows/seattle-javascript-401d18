@@ -1,0 +1,20 @@
+{
+  "name": "00-code-review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "node index.js",
+    "gh-pub": "git add . && git commit -m 'I am committed' && git push origin master" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
