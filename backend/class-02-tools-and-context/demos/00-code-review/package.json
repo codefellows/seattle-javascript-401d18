@@ -5,16 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
-    "start": "node index.js",
-    "gh-pub": "git add . && git commit -m 'I am committed' && git push origin master" 
+    "verbose-test": "./node_modules/jest/bin/jest.js --verbose",
+    "test:watch": "jest --verbose --watchAll",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
+    "eslint": "^4.5.0",
     "jest": "^20.0.4"
   }
 }

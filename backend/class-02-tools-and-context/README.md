@@ -1,6 +1,21 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 02: Tools and Context
 ===
 
+## Daily Plan
+
+* Notes: 
+  - Top of mind questions?
+  - What do you want to impact when you grow up?
+
+* Code Review
+* Scripts and Tools with package.json
+* Context vs Scope
+* `this` keyword
+  * Call & Apply
+* Lab Preview
+
+____
+
 ## package.json Resources
 * Read [about package.json]
 
@@ -27,6 +42,9 @@
 * understand the roll context plays in constructor functions
 
 ## Overview
+#### Context vs Scope
+Every function invocation has both a scope and a context associated with it. Fundamentally, scope is function-based while context is object-based. In other words, scope pertains to the variable access of a function when it is invoked and is unique to each invocation. Context is always the value of the this keyword which is a reference to the object that “owns” the currently executing code.
+
 #### package.json
 * a package.json is a config file used for configuring metadata about a node project
 * It only requires a name and version filed, but a typical package.json has much more information
