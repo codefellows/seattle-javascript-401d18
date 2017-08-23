@@ -1,6 +1,24 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 03: Parallel File Processing
 =====================================
 
+## Daily Plan
+
+* Notes:
+  - Anything top of mind?
+  - eslint - brief review of the tool
+
+* Code Review
+
+* Hoisting & The Event Loop
+* Node Callback Pattern
+* Working with buffers
+* FS module
+* Async Testing & Code Coverage
+
+* Lab Preview
+
+----
+
 ## JS Runtime Resources
 * Watch [what the heck is the event loop anyway]
 
@@ -87,7 +105,7 @@ Javascript is a single threaded language. Which means that it can only do a sing
     * buffers are an array of bytes
       * example:
         ```
-          var buff = new Buffer('welcome to bufferville');
+          var buff = Buffer.from('welcome to bufferville');
           console.log(buff);
 
           <Buffer 77 65 6c 63 6f 6d 65 20 74 6f 20 62 75 66 66 65 72 76 69 6c 6c 65>
@@ -95,7 +113,7 @@ Javascript is a single threaded language. Which means that it can only do a sing
     * NodeJS [buffer documentation](https://nodejs.org/api/buffer.html#buffer_buffer)
     * common encoding types:
       * utf-8 (default)
-        * `buff.toString()`
+        * `buff.toString('utf-8')`
       * base64
         * `buff.toString('base64')`
       * hex
