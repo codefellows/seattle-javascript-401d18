@@ -1,6 +1,18 @@
 401 JS -- class 04 Event Emitters, Buffers, and Bitmaps
 ===
 
+## Daily Plan
+* Notes: 
+  - Anything top of mind?
+
+* Code Review
+  - Node's process.argv property (lets see some CLI magic)
+* Event Emitters
+* Deep dive binary!
+* Bitmap kick-off!
+
+* Lab preview
+
 ## Event Emitter Resources
 * [events api docs]
 
