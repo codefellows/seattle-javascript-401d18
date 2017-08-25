@@ -8,12 +8,13 @@ const List = module.exports = function() {
   this.length = arguments.length
 }
 
-// This is a pure method
-// List.prototype.push = function(value) {
-  //   let newList = Object.create(this)
-  //   newList[newList.length++] = value
-  //   return newList
-  // }
+// This is a pure method (FUNCTIONAL after lecture)
+List.prototype.pushPure = function(value) {
+  let newList = new List()
+  for(let key in this) newList[key] = this[key]
+  newList[newList.length++] = value
+  return newList
+}
 
 // This in not a pure method - modifies the original
 List.prototype.push = function(value) {
@@ -33,7 +34,3 @@ List.prototype.forEach = function(callback) {
     callback(this[i], i, this)
   }
 }
-
-// list.forEach((ele, idx, arr) => {
-
-// })
