@@ -10,8 +10,7 @@ const List = module.exports = function() {
 
 // This is a pure method (FUNCTIONAL after lecture)
 List.prototype.pushPure = function(value) {
-  let newList = new List()
-  for(let key in this) newList[key] = this[key]
+  let newList = Object.assign({}, this)
   newList[newList.length++] = value
   return newList
 }
