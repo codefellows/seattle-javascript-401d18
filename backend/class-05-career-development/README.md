@@ -1,6 +1,25 @@
 401 JS - List Data Structure and Big O w/ Functional Programming
 ===============================================
 
+## Daily Plan
+
+* Notes: 
+  - No code review today, but... hows mapping of the bits?
+  - What's top of mind? 
+
+* Whiteboarding
+  - Process Overview
+  - Interview Rubric
+* Big O notation
+* FP Review - Imperative vs Declarative
+* Abstract Data Structures - WAT!
+* List Data Structure
+
+* Lab Preview
+
+* Whiteboarding Challenges
+
+
 # Big O Resources
 * Read [simple Wiki Big O]
 * Watch [hacker Rank Big O video]
@@ -68,8 +87,8 @@ A factory function is a pure function that acts like a constructor but without t
 
 
 # Whiteboard Exercise (Groups of 4)
-* Implement `forEach()` as a method of your List Data Structure
 * Implement `filter()` as a method of your List Data Structure
+* Implement `slice()` as a method of your List Data Structure
 
 
 [simple Wiki Big O]: https://simple.wikipedia.org/wiki/Big_O_notation
