@@ -7,12 +7,13 @@
   - Anything top of mind
 
 * Code Review
-  - List 
   - Bitmap
+  - List 
 
 * OSI Model
 * TCP
-* Chat Server
+* Chat Server Demo
+* Lab Preview
 
 ## OSI Resources
 * Skim [OSI model wiki]
