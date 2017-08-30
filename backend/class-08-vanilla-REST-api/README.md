@@ -1,6 +1,44 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 08: Vanilla REST API
 =====================================
 
+## Daily Plan
+* Notes:
+  - Anything top of mind?
+
+* Code Review - http server
+* Promises
+
+* Lab Preview & Code Demo (Lets build a legit RESTful API)
+
+```sh
+01-vanilla-rest-api
+├── __test__
+│   ├── lib
+│   │   ├── parse-json.test.js
+│   │   ├── parse-url.test.js
+│   │   ├── router.test.js
+│   │   └── storage.test.js
+│   ├── model
+│   │   └── toy.test.js
+│   ├── route
+│   │   └── route-toy.test.js
+│   └── server.test.js
+├── lib
+│   ├── parse-json.js
+│   ├── parse-url.js
+│   ├── router.js
+│   └── storage.js
+├── model
+│   └── toy.js
+├── package-lock.json
+├── package.json
+├── route
+│   └── route-toy.js
+└── server.js
+```
+
+----
+
 ## Readings
 * Watch [Promises](https://www.youtube.com/watch?v=2d7s3spWAzo)
 
@@ -33,10 +71,10 @@
 
 ## Vanilla REST API
   * **Overview**
-    * we'll be creating a vanilla REST API, with a custom router, that uses custom built and native NodeJS modules (with the exception of `node-uuid`)
+    * we'll be creating a vanilla REST API, with a custom router, that uses custom built and native NodeJS modules (with the exception of `uuid`)
       * the router we will be creating will mimic the core functionality of the router supplied by `express.js`
     * in addition to the creation of our API, we'll be adding tests that check our API calls for the expected response data
-      * this will be done through the use of `superagent` and ChaiJS (`expect`)
+      * this will be done through the use of `superagent` and Jest (`expect`)
       * **remember:** include the server in your test file so that your server is running during the testing process
     * **demo:** Vanilla REST API
 
@@ -44,11 +82,7 @@
     * start the server: `node server.js`
     * quit the server (mac osx): `ctrl c`
     * get a note *(be sure to use your port number and note id)*:
-      * `http localhost:8000/api/note?id=123456789` *or* `http localhost:8000/api/note id==123456789`
+      * `http GET localhost:8000/api/note?id=123456789` *or* `http GET :8000/api/note?id=123456789`
     * post a note *(be sure to use your port number)*:
       * `http POST localhost:8000/api/note name="name of the note" content="some content for the note"`
     * for more useful commands when using `httpie`, check out the docs: [httpie docs](https://httpie.org/doc)
-
-  * **More ES6**
-    * **`let`** - declares a block scope local variable (this limits it's usage to the block, statement, or expression in which it is used)
-    * **arrow functions (aka fat arrow functions)** `() =>` offer a more concise syntax for writing function expressions and change the way that `this` binds in functions
