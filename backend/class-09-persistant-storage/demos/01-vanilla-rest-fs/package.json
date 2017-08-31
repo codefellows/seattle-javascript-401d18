@@ -1,0 +1,47 @@
+{
+  "name": "d18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage",
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:watch": "nodemon server.js",
+    "start:debug": "DEBUG=http* nodemon server.js",
+    "debugger": "node inspect server.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint .",
+    "lint:test": "npm run lint && npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "debug": "^3.0.1",
+    "eslint": "^4.5.0",
+    "jest": "^20.0.4",
+    "faker": "^4.1.0",
+    "superagent": "^3.6.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "uuid": "^3.1.0"
+  }
+}
