@@ -44,7 +44,7 @@
       * each time a new PR is made, TravisCI will run and provide the build status to ensure all checks have passed *(using the built in TravisCI widget on GitHub)*
 
   * **Example: `.travis.yml`**
-    ``` javascript
+    ```yml
       language: node_js
       node_js:
         - 'stable'

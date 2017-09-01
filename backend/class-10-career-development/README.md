@@ -1,6 +1,15 @@
 401JS -- Linked Lists
 ================================
 
+## Daily Plan
+* Notes: 
+  - Anything top of mind?
+* Code Review - Testing
+* Linked Lists
+* Lab Preview - Demo Code
+
+* Whiteboarding!!
+
 ## Abstract Data Type Resources
 * Skim [ADT Wiki]
 
@@ -10,7 +19,6 @@
 
 # Learning Objectives
 * The students will be able to implement a linked list
-* The students will be able to implement a doubly linked list
 * The students will be able to identify use cases for linked lists
 
 # Overview
@@ -23,6 +31,12 @@
   * Traversal (Done from the head of the list)
 * Singly Linked Lists can store both the Head and Tail pointers, though not a common implementation.
 
+```
+                    Head
+                    [[val, next] => [val, next] => [val, next] => [val, next] => null]
+Prepend(insert) => ^
+```
+
 #### Doubly Linked List
 * There are no FILO/FIFO-style constraints on Lists.
 * Doubly linked lists contain nodes which have a data field as well as a 'next' AND 'prev' field, which points to the next and previous nodes in line of nodes.
@@ -31,6 +45,12 @@
   * Deletion (Beginning, End, SpecificNode(x))
   * Traversal (Done from the head or the tail of the list)
 * Doubly Linked Lists commonly store both the Head and Tail pointers.
+
+```
+            Head                                                                          Tail
+            [val, next, prev] <=> [val, next, prev] <=> [val, next, prev] <=> [val, next, prev] <= null
+Prepend <=> ^                                                                                 Append ^ => 
+```
 
 #### Whiteboard Exercise (Group of 3)
 * implement `reverse()` as a pure method

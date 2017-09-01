@@ -6,7 +6,7 @@
     * create and configure a `.travis.yml` file that will be used to tell TravisCI to run your npm `test` and `lint` scripts
     * example `.travis.yml`
 
-    ``` javascript
+    ``` yml
       language: node_js
       node_js:
         - 'stable'
