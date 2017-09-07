@@ -1,9 +1,20 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 14: Relationship Modeling
 ===
 
+## Daily Plan
+* Notes: 
+  - Anything top of mind?
+
+* Code Review - TDD Refactor
+* Model Relationships - `populate`
+* Separate our Dev and Local Production environments
+* Lab Preview - Code Demo
+  - Several small iterations / refactors today
+
+
 ## Learning Objectives
 * Students will learn about realtionship modeling
-* Students will be ablue to create one to one, one to many, and many to many model relationships using a MongoDB ODM
+* Students will be ablue to create one to one, one to many, and many to many model relationships using a MongoDB ORM
 
 ## Resources
 * Read [mongoose populate docs](http://mongoosejs.com/docs/populate.html)
