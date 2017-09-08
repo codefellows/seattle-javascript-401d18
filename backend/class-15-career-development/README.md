@@ -1,6 +1,15 @@
 401JS -- Stacks and Queues
 ================================
 
+## Daily Plan
+* Notes: 
+  - Anything top of mind?
+
+* Code Review
+* Stacks and Queues - introductions / reviews
+* Lab / Whiteboarding Preview & Demo code
+
+
 ## Abstract Data Type Resources
 * Skim [ADT Wiki]
 
