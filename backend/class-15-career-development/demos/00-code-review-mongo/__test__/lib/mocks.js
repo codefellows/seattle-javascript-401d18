@@ -9,16 +9,23 @@ mock.toy = {}
 mock.child = {}
 
 mock.child.createOne = () => new Child({ name: faker.name.firstName() }).save()
+
+mock.child.createMany = n => {
+  let childSavePromises = new Array(n)
+    .fill(0).map(() => mock.child.createOne())
+  return Promise.all(childSavePromises)
+}
+
 mock.toy.createOne = () => {
   let result = {}
 
-  return this.child.createOne()
+  return mock.child.createOne()
   .then(child => {
     result.child = child
     return new Toy({ 
       name: faker.random.word(),
       desc: faker.random.words(12),
-      child: child._id.toString()
+      child: child._id
      }).save()
   })
   .then(toy => {
@@ -27,23 +34,11 @@ mock.toy.createOne = () => {
   })
 }
 
-// mockList.createMany = (n) => {
-//   let mockListArray = new Array(n)
-//     .fill(0).map(() => mockList.createOne())
-//   return Promise.all(mockListArray)
-// }
-
-mock.child.createMany = n => {
-  let childSavePromises = new Array(n)
-  .fill(0).map(() => mock.child.createOne())
-  return Promise.all(childSavePromises)
-}
-
 mock.toy.createMany = n => {
   let result = {}
-  return this.child.createOne()
+  return mock.child.createOne()
   .then(child => {
-    reslut.child = child
+    result.child = child
     let toySavePromises = new Array(n).fill(0)
       .map(() => new Toy({
         name: faker.random.word(),
@@ -54,14 +49,9 @@ mock.toy.createMany = n => {
   })
   .then(toys => {
     result.toys = toys
-    return toys
+    return result
   })
 }
 
-mock.toy.removeAll = () => {
-  return Promise.all([Toy.remove()])
-}
-
-mock.child.removeAll = () => {
-  return Promise.all([Child.remove()])
-}
+mock.toy.removeAll = () => Promise.all([Toy.remove()])
+mock.child.removeAll = () => Promise.all([Child.remove()])

@@ -27,23 +27,24 @@ module.exports = function(router) {
     debug('/api/child GET')
 
     return Child.find()
-      .then(childred => res.json(children.map(child => child._id)))
-      .catch(err => errorHandler(err, req, res))
+    .populate('toy')
+    .then(children => res.json(children.map(child => child._id)))
+    .catch(err => errorHandler(err, req, res))
   })
 
   router.put('/api/child/:_id', (req, res) => {
     debug('/api/child/:_id PUT')
 
     return Child.findByIdAndUpdate(req.params._id, req.body, { upsert: true, runValidators: true })
-      .then(child => res.sendStatus(204))
-      .catch(err => errorHandler(err, req, res))
+    .then(child => res.sendStatus(204))
+    .catch(err => errorHandler(err, req, res))
   })
 
   router.delete('/api/child/:_id', (req, res) => {
     debug('/api/child/:_id DELETE')
 
     return Child.findByIdAndRemove(req.params._id)
-      .then(child => res.sendStatus(204))
-      .catch(err => errorHandler(err, req, res))
+    .then(child => res.sendStatus(204))
+    .catch(err => errorHandler(err, req, res))
   })
 }
