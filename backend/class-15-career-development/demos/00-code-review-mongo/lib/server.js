@@ -32,12 +32,13 @@ server.start = () => {
   return new Promise((resolve, reject) => {
     if(!server || !server.isOn) {
       server.http = app.listen(process.env.PORT, () => {
+        debug(`Listening on ${process.env.PORT}`)
         server.isOn = true;
         resolve();
       })
       return
     }
-    reject(new Error('server allread running'))
+    reject(new Error('server already running'))
   })
 }
 
@@ -49,6 +50,6 @@ server.stop = () => {
         resolve()
       })
     }
-    reject(new Error('ther server is not running'))
+    reject(new Error('the server is not running'))
   })
 }

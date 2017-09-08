@@ -19,6 +19,7 @@ module.exports = function(router) {
     debug('/api/child/:_id GET')
 
     return Child.findById(req.params._id)
+    .populate({ path: 'toys' })
     .then(child => res.json(child))
     .catch(err => errorHandler(err, req, res))
   })
@@ -27,7 +28,6 @@ module.exports = function(router) {
     debug('/api/child GET')
 
     return Child.find()
-    .populate('toy')
     .then(children => res.json(children.map(child => child._id)))
     .catch(err => errorHandler(err, req, res))
   })
