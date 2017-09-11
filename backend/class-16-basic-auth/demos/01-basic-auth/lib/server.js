@@ -10,7 +10,7 @@ const app = express()
 // mongoose setup
 const mongoose = require('mongoose')
 mongoose.Promise = require('bluebird')
-mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true })
+let wat = mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true })
 
 // router middleware
 require('../route/route-auth')(router)
@@ -29,6 +29,7 @@ server.start = () => {
   return new Promise((resolve, reject) => {
     if(!server || !server.isOn) {
       server.http = app.listen(process.env.PORT, () => {
+        debug(`Listening on ${process.env.PORT}`)
         server.isOn = true;
         resolve();
       })
@@ -42,6 +43,7 @@ server.stop = () => {
   return new Promise((resolve, reject) => {
     if(server.http && server.isOn) {
       return server.http.close(() => {
+        wat.close()
         server.isOn = false
         resolve()
       })

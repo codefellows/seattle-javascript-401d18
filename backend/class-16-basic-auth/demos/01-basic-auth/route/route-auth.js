@@ -9,7 +9,7 @@ module.exports = function(router) {
   router.post('/api/signup', (req, res, next) => {
     debug('POST /api/signup')
 
-    // get rid of this before the req is handed back as a nested object in the res
+    // get rid of the PW on req.body before the req is handed back as a nested object in the res
     let pw = req.body.password
     delete req.body.password
 
@@ -18,7 +18,7 @@ module.exports = function(router) {
     user.generatePasswordHash(pw)
     .then(user => user.save())
     .then(user => user.generateToken())
-    .then(token => res.send(token))
+    .then(token => res.status(201).send(token))
     .catch(err => errorHandler(err, req, res))
   })
 
