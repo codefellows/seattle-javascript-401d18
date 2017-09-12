@@ -43,7 +43,7 @@ module.exports = function(router) {
   router.delete('/api/child/:_id', (req, res) => {
     debug('/api/child/:_id DELETE')
 
-    return Child.findByIdAndRemove(req.params._id)
+    return Child.findById(req.params._id).remove()
     .then(child => res.sendStatus(204))
     .catch(err => errorHandler(err, req, res))
   })

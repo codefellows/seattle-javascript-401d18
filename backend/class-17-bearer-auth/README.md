@@ -1,6 +1,20 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 17: Bearer Auth
 =====================================
 
+## Daily Plan
+* Notes
+  - Anything top of mind?
+  - Postman
+
+* Code review - Update our TDD scaffold (fixed the Jest 'hang' bug)
+* Bearer Auth - Finish up the Auth process we started 
+
+* Lab Preview & Demo
+
+* Continuous Integration with TravisCI (introduction)
+
+----
+
 ## Bearer Auth
   * **Overview**
     * using standard HTTP, we can use *bearer* auth tokens to access protected resources
@@ -18,3 +32,43 @@
 
 ## CFGram Visualization
   ![visualization](https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/cfgram.png)
+
+---- 
+
+## Continuous Integration (CI)
+  * **Overview**
+    * CI is the concept of merging new code into a collaborative repository multiple times a day
+    * CI tools provide us with a basic level of build automation and software quality management (SQM) - this is done by:
+      * running our build processes
+      * checking to ensure our build is working
+      * checking to ensure that all of our tests have passed
+
+  * **TravisCI**
+    * [TravisCI](www.travisci.org) is an easy to use, highly configurable CI tool
+    * to enable a new repository to work with TravisCI, you simply need to:
+      * create an account with TravisCI
+      * enable the repository(s) you wish to use
+      * create a `.travis.yml` file, which is used to configure a build **(see example file below)**
+      * each time a new PR is made, TravisCI will run and provide the build status to ensure all checks have passed *(using the built in TravisCI widget on GitHub)*
+
+  * **Example: `.travis.yml`**
+    ```yml
+      language: node_js
+      node_js:
+        - "8"
+      services:
+        - mongodb
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - gcc-4.8
+            - g++-4.8
+      env:
+        - CXX=g++-4.8
+      sudo: required
+      before_script: npm i
+      script:
+        - npm run test
+    ```
