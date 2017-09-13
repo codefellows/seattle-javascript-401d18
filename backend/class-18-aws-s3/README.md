@@ -1,6 +1,28 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 18: AWS S3
 =====================================
 
+## Daily Plan
+* Notes: 
+  - Anything top of mind?
+  - We're going to go over time today...maybe 'til 12:45p.
+
+* Code Review
+* Data Structures Code Demo _Stacks: push() and Queues: enqueue()_
+* Amazon AWS (S3) Intro _general talk about aws-sdk_
+* Continuous Integration Intro _TravisCI / YML file format_
+* Code Demo _hook up a new resource using S3 as file storage_
+
+* After lunch:  30 minute time-boxed whiteboarding in pairs
+  - stack/queue whiteboard challenge
+    * Groups:
+      1. Michelle / Isaiah
+      2. Isaac / Shaun
+      3. Katherine / Gavin
+      4. Tim / Maddy / Said
+      5. Aaron / Zach
+
+-----
+
 ## AWS S3
   * **Overview**
     * S3 *(Amazon Simple Storage Service)* is a scalable object storage platform
@@ -20,6 +42,7 @@
     AWS_ACCESS_KEY_ID='youraccesskey'
     AWS_SECRET_ACCESS_KEY='yoursecretkey'
   ```
+  * _Don't forget to replicate these key:value pairs with data for your test environment in `.test.env`_
 
   * **newly added `npm` modules**
     * `multer` - used for handling multipart form data (`entype="multipart/form-data"`)
@@ -55,11 +78,16 @@
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - gcc-4.8
-            - g++-4.8
+            - gcc-5
+            - g++-5
       env:
-        - CXX=g++-4.8
+        - CXX=g++-5
       sudo: required
+      # safelist
+      branches:
+        only:
+        - master
+        - test_branch
       before_script: npm i
       script:
         - npm run test
