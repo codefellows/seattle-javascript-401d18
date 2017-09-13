@@ -41,7 +41,10 @@ mocks.gallery.createOne = function() {
       userId: userData.user._id
     }).save()
   })
-  .then(gallery => result.gallery = gallery)
+  .then(gallery => {
+    result.gallery = gallery
+    return result
+  })
 }
 
 mocks.gallery.removeAll = function() {
