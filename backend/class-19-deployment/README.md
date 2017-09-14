@@ -1,6 +1,19 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 19: Deployment
 =====================================
 
+## Daily Plan
+* Notes
+  - Anything top of mind?
+  - Project ideas
+
+* Code Review
+* TravisCI _Continuous Integration_
+* Heroku _Deployment_
+
+Lab Preview
+
+----
+
 ## Deployment, Heroku, TravisCI & Configuring Staging/Production Pipelines
   * **TravisCI**
     * create and configure a `.travis.yml` file that will be used to tell TravisCI to run your npm `test` and `lint` scripts
@@ -24,8 +37,7 @@
       sudo: required
       before_script: npm i
       script:
-        - npm test
-        - npm run lint
+        - npm test:lint
     ```
 
   * **Heroku Deployment**
@@ -44,6 +56,6 @@
     - click on the **Deploy** tab
     - create a new pipeline called **staging**
     - click the button to connect your application to GitHub
-    - in the **Automatic deploys** field, click the checkbox to **Wait for CI to pass before deploy**, choose **staging** as your deployment branch *(you'll need to already have a `staging` branch pushed to GitHub)* and click the button to **Enable Automatic Deploys**
+    - in the **Automatic deploys** field, choose **staging** as your deployment branch *(you'll need to already have a `staging` branch pushed to GitHub)* and click the button to **Enable Automatic Deploys**
     - **repeat** the following steps to create a production pipeline
       - *note: be sure to name the application "myapp-production", add it to a production pipeline, and enable automatic deploys to deploy to your `master` branch*
