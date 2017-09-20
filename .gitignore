@@ -6,7 +6,6 @@ build
 .*.env
 .tern*
 whiteboard-solutions/
-frontend/
 
 ### OSX ###
 .DS_Store
