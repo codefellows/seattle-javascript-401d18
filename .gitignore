@@ -4,7 +4,6 @@ db
 build
 *.env
 .*.env
-whiteboard-solutions/
 
 ### OSX ###
 .DS_Store
