@@ -16,6 +16,15 @@
 * Lab Preview: _Cowsay Ipsum_
 * Whiteboard: Challenge _Create a constructor_
 
+> Week 6 Whiteboard Groups
+  1. Gavin / Maddy
+  1. Tim / Shaun
+  1. Michelle / Aaron
+  1. Katherine / Zach
+  1. Said / Isaiah / Isaac
+
+  **Challenge**: Create a Node and Tree constructor for our Tree Data Structure using ES6 Class Syntax. Be sure to transfer this content into a file for use throughout the week; i.e. we will need that code for more code...
+
 ----
 
 ## Learning Objectives
