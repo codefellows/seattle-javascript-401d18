@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 35: Putting It All Together
 ====
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to complete a full stack application (using the MERN stack)
 

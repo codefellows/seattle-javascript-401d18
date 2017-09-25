@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 22: Forms and Props
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to manage controlled inputs
 * students will learn to pass data from parent components to child components through the use of `props`

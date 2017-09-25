@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 24: Component Composition
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to utilize proper component composition constructs
 * students will be able to compose react components through the use of props

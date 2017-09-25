@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 36: Google OAuth
 ====
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to add Google OAuth to a MERN stack application
 

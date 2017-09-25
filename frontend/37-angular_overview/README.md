@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 37: AngularJS Overview
 ====
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to create a simple AngularJS application
 

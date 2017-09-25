@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 27: Combining Reducers & Testing Actions/Reducers
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to combine reducers to simplify the management of complex application states
 * students will be able to create meaningful tests through the use of jest and enzyme

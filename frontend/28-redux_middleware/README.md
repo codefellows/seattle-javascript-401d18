@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 28: Redux Middleware
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to create and implement custom middleware for redux
 * students will be able to add and implement third party middleware for redux

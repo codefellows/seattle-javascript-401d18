@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 29: UI Styling & Component Testing
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to use SCSS to create component based and modular CSS styles
 * students will be able to *generally* conform to the SMACCS principles for creating base, layout, and theme containers for their application styles

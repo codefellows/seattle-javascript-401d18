@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 26: React & Redux
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to use redux with react
 * students will be able to design redux reducers for controlling application state

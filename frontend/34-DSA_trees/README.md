@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 34: Trees
 ====
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## What is a Tree?
   * **Overview**
     * trees are a widely used data structure that simulate a hierarchical "tree" structure

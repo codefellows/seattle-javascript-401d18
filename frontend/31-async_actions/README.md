@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 31: Async Actions
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to create thunk based middleware for redux
 * students will be able to create asynchronous action creators

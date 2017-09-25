@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 23: Components and Routing
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to create front end routes through the use of `react-router-dom`
 * students will be able to restructure their applications to use modular components

@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 32: Authentication and Authorization
 ===
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Learning Objectives
 * students will be able to manage basic and bearer auth on the client side
 * students will learn to manage cookies on the client side

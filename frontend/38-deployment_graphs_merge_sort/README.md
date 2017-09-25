@@ -1,6 +1,15 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 38: Frontend Deployment
 ====
 
+## Daily Plan
+* Notes
+  - Anything top of mind
+
+* Code Review
+* 
+
+----
+
 ## Deployment Steps
   * **Code Updates**
     * add the following to your `package.json` file

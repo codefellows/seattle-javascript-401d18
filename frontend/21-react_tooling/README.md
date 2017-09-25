@@ -1,5 +1,22 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 21: React Tooling
-===
+====
+
+## Daily Plan
+* Notes: 
+  - Anything top of mind
+  - What's coming up in the next week, four weeks, etc...
+    - Code demo vs Labs _similar, but not the same..._
+    - Daily 30 min whiteboarding exercise
+
+* Data Structures: _Extended Linked Lists_
+* Webpack: _Introduction & Setup Code Demo_
+* React: _Introduction & Counter App Demo_ 
+* SCSS: _Introduction to SCSS (time permitting)_
+
+* Lab Preview: _Cowsay Ipsum_
+* Whiteboard: Challenge _Create a constructor_
+
+----
 
 ## Learning Objectives
 * students will be able to configure webpack.js to build a web application bundle
