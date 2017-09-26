@@ -6,7 +6,13 @@
   - Anything top of mind
 
 * Code Review
-* 
+* Forms _intro to setting up forms to handle state & values_
+* Props _intro to passing state to components_
+
+* Trees _traversal methods; pre-order & breadth-first_
+
+* Lab preview _building a reddit scraper!_
+* Whiteboard Challenge _implement an insertion method on our Tree data structure using pre-order traversal_
 
 ----
 
