@@ -4,9 +4,17 @@
 ## Daily Plan
 * Notes
   - Anything top of mind
+  - Whiteboarding 'verification': At 30 minutes, please seek approval on current state, and then move on.
+  - Don't forget the 15 minute rule... 
 
-* Code Review
-* 
+* Code Review _Build out the Reddit Search App_
+* React Router _Introduction to client-side routing with ReactJS_
+* Component Composition _Modularizing our front-end code base into reusable parts_
+
+* Trees _Traversal methods: How to we navigate our tree data structure_
+
+* Lab Preview _Build a notes app: Part 1_
+* Whiteboard Challenge _Using your traversal methods, add a new node to the Tree_
 
 ----
 

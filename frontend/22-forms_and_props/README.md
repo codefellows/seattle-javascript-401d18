@@ -12,7 +12,8 @@
 * Trees _traversal methods; pre-order & breadth-first_
 
 * Lab preview _building a reddit scraper!_
-* Whiteboard Challenge _implement an insertion method on our Tree data structure using pre-order traversal_
+* Whiteboard Challenge:
+   _Implement a function called `findValues(root)`, which takes the root of a tree and returns an array of values where each value represents the value of each node in the tree._
 
 ----
 
