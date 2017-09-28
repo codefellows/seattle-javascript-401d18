@@ -9,20 +9,33 @@ const TreeNode = module.exports = class {
     let current
 
     while(q.length) {
-      current = q.shift() // q => [empty]
+      current = q.shift()
       if(cb) cb(current)
       if(current.children.length) q = [...q, ...current.children]
     }
   }
 
-  insert(newNode, parentVal) {
-    if(!newNode instanceof TreeNode) throw new Error('Oh snap... that\'s not a TreeNode')
+  preOrder(cb) {
 
-    this.breadthFirst(node => {
-      if(node.val === parentVal) {
-        node.children.push(newNode)
-      }
-    })
-    return this
+  }
+
+  inOrder(cb) {
+
+  }
+
+  postOrder(cb) {
+
+  }
+
+  insert(node, parentVal) {
+    
+  }
+
+  prune(val) {
+
+  }
+
+  remove(val) {
+
   }
 }

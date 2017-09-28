@@ -4,9 +4,14 @@
 ## Daily Plan
 * Notes
   - Anything top of mind
+  - Copying the lecture code and then refactoring... Please do not.
 
-* Code Review
-* 
+* Code Review _build the expense tracker one... more... time..._
+* Component Composition _Deeper view of modularizing components; Composition vs. Inheritance..._
+* Data Structure: Trees _Depth First Traversal & Insertion_
+
+* Lab preview _Notes List App Part 2_
+* Whiteboard Challenge __
 
 ----
 
