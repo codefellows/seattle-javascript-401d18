@@ -5,8 +5,14 @@
 * Notes
   - Anything top of mind
 
-* Code Review
-* 
+* Code Review _HTML Parser: Scott's solution_
+* Redux _State Management Library_
+  - React is a view library with state management... Redux is a state manager
+
+* Binary Search Trees  _Lets build a constructor for a BST Node_
+
+* Lab Preview _Expense Tracker App_
+* Whiteboard Challenge _Implement breadth-first traversal method for a BST_
 
 ----
 
