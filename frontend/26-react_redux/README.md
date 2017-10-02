@@ -5,7 +5,7 @@
 * Notes
   - Anything top of mind
 
-* Code Review _HTML Parser: Scott's solution_
+* Code Review _HTML Parser: Pseudo-code_
 * Redux _State Management Library_
   - React is a view library with state management... Redux is a state manager
 
