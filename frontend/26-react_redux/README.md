@@ -14,6 +14,13 @@
 * Lab Preview _Expense Tracker App_
 * Whiteboard Challenge _Implement breadth-first traversal method for a BST_
 
+> Whiteboard groups:
+> 1. Zach, Shaun
+> 2. Said, Michelle, Gavin
+> 3. Isaiah, Isaac
+> 4. Aaron, Tim
+> 5. Maddy, Katherine
+
 ----
 
 ## Learning Objectives
