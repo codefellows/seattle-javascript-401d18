@@ -5,8 +5,12 @@
 * Notes
   - Anything top of mind
 
-* Code Review
-* 
+* Code Review _Review Redux & Complete Lab Features_
+* Combining Reducers _Setting dependent state modifications on models_
+* Lab Preview _Expense Tracker Pt2_
+
+* Binary Trees _Deeper look into the constraints of Binary Trees, and AVL Trees_
+* Whiteboard Challenge: _Implement a Binary Search Method (ex. `contains()` or `lookup()`) on a binary tree_
 
 ----
 
@@ -25,15 +29,3 @@
   * this is where `combineReducers` comes into play
 * `combineReducers` is a redux method that enables you to create a single reducer from many reducers that define sub states and their interactions
 * a state returned from a combined reducer is an object where each _sub state reducer_ defines a property on that object
-
-#### Testing
-###### jest
-* **jest** is a javascript testing framework with out of the box react support
-* it includes a very similar API to that of mocha
-* some methods include:
-  * `describe` (same as mocha)
-  * `beforeAll`, `afterAll` (same as mocha `before` and `after`)
-  * `beforeEach`, `afterEach` (same as mocha)
-  * `test` (same as mocha's `it`)
-  * `expect` (similar to chai's `expect` syntax)
-* we'll be using **jest** to test our application's actions, reducers, middleware, and components
