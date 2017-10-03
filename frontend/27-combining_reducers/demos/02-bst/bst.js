@@ -1,9 +1,10 @@
 let Viz = require('viz.js')
 
-let BstNode = module.exports = class {
+const BstNode = module.exports = class {
   constructor(key, val=null) {
     this.key = key
     this.val = val
+    this.parent = null
     this.left = null
     this.right = null
   }
@@ -18,40 +19,63 @@ let BstNode = module.exports = class {
     }
   }
 
+  inOrder(cb) {
+    _walk(this)
+
+    function _walk(node) {
+      if(node.left) _walk(node.left)
+      cb(node)
+      if(node.right) _walk(node.right)
+    }
+  }
+
+  postOrder(cb) {
+    _walk(this)
+
+    function _walk(node) {
+      if(node.left) _walk(node.left)
+      if(node.right) _walk(node.right)
+      cb(node)
+    }
+  }
+
   breadthFirst(cb) {
     let q = [this]
     let current
 
-    while(q.length) {
+    while(q.length > 0) {
       current = q.pop()
       cb(current)
       if(current.left) q.unshift(current.left)
       if(current.right) q.unshift(current.right)
     }
+    return result
   }
 
-  insert(node) {
-    if(!node instanceof BstNode) throw new Error('VALIDATION ERROR: node must be instance of BST')
-    if(node.key === this.key) throw new Error('VALIDATION ERROR: node must have a unique key')
+  insert(node, balance=false) {
+    if(!node instanceof BstNode) throw new Error('VALIDATION ERROR: Value must be BstNode')
+    if(node.key === this.key) throw new Error('VALIDATION ERROR: Value must be unique')
     if(node.key > this.key) {
-      if(!this.right) this.right = node
-      else this.right.insert(node)
-    } else if(node.key < this.key) { // could also be written without a condition as 'else {}'
-      if(!this.left) this.left = node
-      else this.left.insert(node) 
+      if(!this.right) {
+        this.right = node
+        this.right.parent = this
+      } else this.right.insert(node)
+    } else if(node.key < this.key) {
+      if(!this.left) {
+        this.left = node
+        this.left.parent = this
+      } else this.left.insert(node)
     }
-    return
+    return 
   }
 
-
-  // helper methods for providing an HTML viz document of the tree
   getDotInfo() {
     let result = 'digraph { '
 
     this.preOrder(node => {
       if(!node) return
-      if(node.left) result += `${node.key} -> ${node.left.key}`
-      if(node.right) result += `${node.key} -> ${node.right.key}`
+      if(node.left) result += `${node.key} -> ${node.left.key} `
+      if(node.right) result += `${node.key} -> ${node.right.key} `
     })
 
     return `${result};}`
