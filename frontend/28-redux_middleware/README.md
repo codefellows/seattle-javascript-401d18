@@ -1,12 +1,15 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 28: Redux Middleware
+![cf](http://i.imgur.com/7v5ASc8.png) 28: Review Day
 ===
 
 ## Daily Plan
 * Notes
   - Anything top of mind
+  - Final Projects _Pre-existing project idea pitch_
 
-* Code Review
-* 
+* Code Review _Add UI components for our Cards_
+* Lab Preview _Get caught up_
+
+* Whiteboard exercise _write a function to flatten a bst into a linked list (bonus sorted linked list)_
 
 ----
 

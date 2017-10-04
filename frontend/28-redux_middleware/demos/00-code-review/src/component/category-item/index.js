@@ -17,10 +17,16 @@ class CategoryItem extends React.Component {
           buttonText="update"
           onComplete={this.props.categoryUpdate}
           category={this.props.category}/>
+
+          <div>
+            {/* this is where we would have a CardItem with CardForm */}
+          </div>
       </div>
     )
   }
 }
+
+let mapStateToProps = () => {}
  
 let mapDispatchToProps = (dispatch, getState) => {
   return {
@@ -29,4 +35,4 @@ let mapDispatchToProps = (dispatch, getState) => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(CategoryItem)
+export default connect(mapStateToProps, mapDispatchToProps)(CategoryItem)
