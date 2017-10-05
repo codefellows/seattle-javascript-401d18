@@ -8,8 +8,8 @@ class DashboardContainer extends React.Component {
   componentDidMount() {
     console.log('__DASHBOARD__', this)
     this.props.categoryCreate({title: 'Star Wars'})
-    this.props.categoryCreate({title: 'Dune'})
-    this.props.categoryCreate({title: 'Star Trek'})
+    // this.props.categoryCreate({title: 'Dune'})
+    // this.props.categoryCreate({title: 'Star Trek'})
   }
 
   render() {

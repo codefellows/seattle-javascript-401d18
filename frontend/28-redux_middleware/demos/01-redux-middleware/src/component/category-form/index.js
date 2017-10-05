@@ -31,7 +31,6 @@ class CategoryForm extends React.Component {
     return (
       <form className="category-form" onSubmit={this.handleSubmit}>
         <input 
-          required
           type="text"
           name="title"
           placeholder="enter a title"
