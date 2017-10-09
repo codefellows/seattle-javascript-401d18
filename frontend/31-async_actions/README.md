@@ -4,9 +4,14 @@
 ## Daily Plan
 * Notes
   - Anything top of mind
+  - Review and Roadmap _Where are we at, and where are we headed..._
 
-* Code Review
-* 
+* Code Review _Code Challenges: Flatten a BT and Compare two BTs_
+* Thunk Middleware _What's a Thunk? Why do we need it?_
+* Lab Preview _Applying Redux-Thunk middleware to our application_
+
+* Hash Tables _Introduction_
+* Whiteboarding Challenge _Create your own hash function_
 
 ----
 
