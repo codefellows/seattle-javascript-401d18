@@ -5,8 +5,12 @@
 * Notes
   - Anything top of mind
 
-* Code Review
-* 
+* Code Review _Implement async action creators_
+* Client-side Auth _Implement signup/login and connect to our back-ends_ 
+* Lab Preview
+
+* Hash Tables _Review hashing function, and hash tables_
+* Whiteboard Challenge __
 
 ----
 
