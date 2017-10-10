@@ -5,7 +5,7 @@ export const tokenSet = token => ({
   payload: token,
 })
 
-export const deleteToken = () => ({type: 'DELETE_TOKEN'})
+export const tokenDelete = () => ({type: 'TOKEN_DELETE', payload: null})
 
 export const signupRequest = user => dispatch => {
   return superagent.post(`${__API_URL__}/signup`)
