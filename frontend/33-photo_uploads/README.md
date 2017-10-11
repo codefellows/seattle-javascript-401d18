@@ -4,9 +4,15 @@
 ## Daily Plan
 * Notes
   - Anything top of mind
+  - We'll code out the challenge from yesterday together on Friday
+  - Final Project groups
+  - Final whiteboard exams _next week: schedule out soon_
 
-* Code Review
-* 
+* Code Review _Reveiw Auth from yesterday_
+* Photo Uploads for Sluggram _Using the file reader API_
+* Lab Preview
+
+* Whiteboard Challenge _No Challenge Today; Lots of code to write!_
 
 ----
 
