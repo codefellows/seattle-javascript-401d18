@@ -5,8 +5,8 @@
 * Notes
   - Anything top of mind
 
-* Code Review
-* 
+* Code Review _and putting it all together!_
+* Lab Preview _Finish up your app; we're deploying backend and frontend tomorrow!_
 
 ----
 
