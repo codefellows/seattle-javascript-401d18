@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
+import Avatar from 'material-ui/Avatar'
 import {tokenDeleteRequest} from '../../action/auth-actions'
 
 class Navbar extends React.Component {
@@ -10,7 +11,7 @@ class Navbar extends React.Component {
         {this.props.auth && this.props.profile ? 
           <div className="profile-header">
             <h2>Welcome {this.props.profile.username}</h2>
-            <img src={this.props.profile.avatar} style={{"width": "15%", "border": "1px solid grey"}}/>
+            <Avatar src={this.props.profile.avatar}/>
           </div>
           :
           undefined
@@ -21,6 +22,7 @@ class Navbar extends React.Component {
               <div>
                 <li onClick={this.props.tokenDelete}><Link to="/">Logout</Link></li>
                 <li><Link to="/settings">Settings</Link></li> 
+                <li><Link to="/dashboard">Dashboard</Link></li> 
               </div>
               :
               <div> 

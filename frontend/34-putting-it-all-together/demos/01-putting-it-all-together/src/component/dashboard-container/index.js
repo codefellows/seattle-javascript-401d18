@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import * as utils from '../../lib/utils'
 import PhotoForm from '../photo-form'
 import PhotoItem from '../photo-item'
+import {GridList} from 'material-ui/GridList'
 import {photosFetchRequest, photoCreateRequest} from '../../action/photo-actions'
 
 class DashboardContainer extends React.Component {
@@ -11,6 +12,14 @@ class DashboardContainer extends React.Component {
   }
 
   render() {
+    const styles = {
+      root: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+      },
+    }
+
     return (
       <div className="dashboard-container">
         <h2>I are Dashboard</h2>
@@ -18,7 +27,9 @@ class DashboardContainer extends React.Component {
           buttonText="create"
           onComplete={this.props.photoCreate}/>
 
-        {this.props.photos.map(photo => <PhotoItem key={photo._id} photo={photo}/>)}
+        <GridList style={styles.root} cellHeight={180}>
+          {this.props.photos.map(photo => <PhotoItem key={photo._id} photo={photo}/>)}
+        </GridList>
       </div>
     )
   }

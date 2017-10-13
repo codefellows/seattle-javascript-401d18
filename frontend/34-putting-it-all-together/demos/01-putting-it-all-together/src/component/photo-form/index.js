@@ -1,5 +1,6 @@
 import React from 'react'
 import * as utils from '../../lib/utils'
+import RaisedButton from 'material-ui/RaisedButton'
 
 class PhotoForm extends React.Component {
   constructor(props) {
@@ -54,7 +55,7 @@ class PhotoForm extends React.Component {
           value={this.state.description}
           onChange={this.handleChange}/>
         
-        <button type="submit">{this.props.buttonText}</button>
+        <RaisedButton label={this.props.buttonText} type="submit" />
       </form>
     )
   }

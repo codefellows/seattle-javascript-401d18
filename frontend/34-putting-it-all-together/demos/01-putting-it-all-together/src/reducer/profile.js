@@ -8,6 +8,7 @@ let validateProfile = profile => {
 export default (state=null, action) => {
   let {type, payload} = action
   switch(type) {
+    case 'TOKEN_DELETE': return null
     case 'PROFILE_SET': return validateProfile(payload)
     case 'PROFILE_CREATE': return validateProfile(payload)
     default: return state
