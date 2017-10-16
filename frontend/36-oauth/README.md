@@ -5,8 +5,10 @@
 * Notes
   - Anything top of mind
 
-* Code Review
-* 
+* OAuth _What is it, and why would we want to use it?_
+* Lab Preview _Implement a simple front-end static site that interacts with our OAuth route_
+
+* Whiteboard Challenge __
 
 ----
 
