@@ -8,7 +8,18 @@
 * OAuth _What is it, and why would we want to use it?_
 * Lab Preview _Implement a simple front-end static site that interacts with our OAuth route_
 
-* Whiteboard Challenge __
+----
+
+## Daily Plan _OAuth part 2_
+* Notes
+  - Anything top of mind
+
+* Hash Table Challenge _Review solution_
+* Linked List Partition _Review solution_
+* Build a React frontend for our OAuth backend routes
+
+* Lab Preview _Implement the React front-end for our OAuth route_
+  - Stretch _set up some other functionality to make calls and work with a Google API!_
 
 ----
 
